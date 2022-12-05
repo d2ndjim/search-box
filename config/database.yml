@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: search_box_development
+  pool: 5
+  username: postgres
+  password: postgres
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: search_box_test
+  pool: 5
+  username: postgres
+  password: postgres
+
+production:
+  <<: *default
+  database: search_box_production
+  username: search_box
+  password: <%= ENV["SEARCH_BOX_DATABASE_PASSWORD"] %>
