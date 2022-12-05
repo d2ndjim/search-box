@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
 
   # POST /articles or /articles.json
   def create
-    @article = Article.create!(article_params)
+    @article = current_user.articles.create!(article_params)
 
     respond_to do |format|
       if @article.save
