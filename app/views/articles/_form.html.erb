@@ -13,15 +13,15 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none" %>
   </div>
 
   <div>
     <%= form.label :link, style: "display: block" %>
-    <%= form.text_field :link %>
+    <%= form.text_field :link, class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Create Article", class: "mt-4 px-4 py-3 font-medium bg-orange-300 text-natural-900 rounded inline-flex items-center cursor-pointer hover:bg-orange-400 focus:ring-4 ring-0 focus:ring-orange-100" %>
   </div>
 <% end %>
