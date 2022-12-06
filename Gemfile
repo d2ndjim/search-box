@@ -29,6 +29,7 @@ gem "jbuilder"
 
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -43,6 +44,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+gem 'rspec-rails'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
