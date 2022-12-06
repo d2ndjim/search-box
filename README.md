@@ -15,9 +15,11 @@ Run the following commands:</br>
 `git clone https://github.com/d2ndjim/search-box.git`</br>
 `cd search-box`</br>
 `bundle install`</br>
-`rails s`</br>
+`add username and password to config/database.yml file`</br>
+`run rails db:create db:migrate`</br>
+`run rails s`</br> 
 Open a browser and go to: `https://localhost:3000` to view the app.
-
+Alternatively, run `bin/dev` and Open a browser and go to: `https://localhost:5000` to view the app.
 ## Testing
 
 `cd search-box`</br>
